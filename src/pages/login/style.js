@@ -86,6 +86,15 @@ const styles = StyleSheet.create({
     gap: 50,
     marginBottom: 20,
    },
+   allTextPage: {
+    color: '#6064C9',
+    fontSize: 16, 
+    fontWeight: '600',
+   }, 
+   signupText: {
+    fontSize: 17,
+    fontWeight: 'bold'
+   },
 })
 
 export default styles

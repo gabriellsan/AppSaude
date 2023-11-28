@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, TouchableOpacity , Text, TextInput} from "react-native"
+import { View, TouchableOpacity , Text, TextInput, Tex} from "react-native"
 import styles from "./style"
 
 export function Login(){
@@ -35,7 +35,7 @@ export function Login(){
                 placeholder="Senha"/>
             </View>
             <View style={styles.containerRememberPassword}>
-              <Text>Lembrar Senha</Text>
+              <Text style={styles.allTextPage}>Lembrar Senha</Text>
             </View>
             <View style={styles.containerButton}>
               <TouchableOpacity style={styles.buttonLogar}>
@@ -45,8 +45,8 @@ export function Login(){
               </TouchableOpacity>
             </View>
             <View style={styles.bottomContainerText}>
-              <Text>Ou Cadastre-se aqui</Text>
-              <Text>Esqueceu sua Senha?</Text>
+              <Text style={styles.allTextPage}>Ou <Text style={styles.signupText}>Cadastre-se</Text> aqui</Text>
+              <Text style={styles.allTextPage}>Esqueceu sua Senha?</Text>
             </View>
           </View>
 
