@@ -15,15 +15,15 @@ const styles = StyleSheet.create({
     height: '100%',
     borderTopStartRadius: 30,
     borderTopEndRadius: 30,
+    marginTop: 400,
    },
    back: {
     paddingLeft: 30,
     top: 150,
    },
    textMainContainer: {
-    marginTop: 350,
+    top: 270,
     paddingLeft: 30,
-    marginBottom: 110,
    },
    textMain: {
     fontWeight: '600',
@@ -83,8 +83,7 @@ const styles = StyleSheet.create({
    bottomContainerText: {
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 50,
-    marginBottom: 20,
+    gap: 60,
    },
    allTextPage: {
     color: '#6064C9',
