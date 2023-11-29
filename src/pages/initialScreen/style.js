@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         borderRadius: 10,
         backgroundColor: '#D8FFF8',
-        width: '80%',
+        width: '65%',
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: 320,
-        height: 90,
+        paddingVertical: 10,
         borderWidth: 5,
         borderColor: '#D8FFF8',
         borderStyle: 'solid',

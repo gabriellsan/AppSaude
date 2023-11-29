@@ -3,19 +3,20 @@ import { StyleSheet } from "react-native"
 const styles = StyleSheet.create({
    main: {
     flex: 1,
-    backgroundColor: '#6064C9',
+    backgroundColor: '#D8FFF8',
     height: '100%',
    }, 
    mainContainer: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#D8FFF8',
+    backgroundColor: '#6064C9',
     width: '100%',
     height: '100%',
     borderTopStartRadius: 30,
     borderTopEndRadius: 30,
-    marginTop: 400,
+    paddingTop: 15,
+    marginTop: 390,
    },
    back: {
     paddingLeft: 30,
@@ -24,17 +25,17 @@ const styles = StyleSheet.create({
    eye: {
       alignItems: "center",
       position: "absolute",
-      bottom: 51,
+      bottom: 35,
       right: 20,
    },
    textMainContainer: {
-    top: 270,
+    top: 260,
     paddingLeft: 30,
    },
    textMain: {
     fontWeight: '600',
-    fontSize: 36,
-    color: '#FFF'
+    fontSize: 40,
+    color: '#6064C9'
    },
    containerForm: {
     width: '80%',
@@ -42,14 +43,11 @@ const styles = StyleSheet.create({
     paddingTop: 25,
    },
    formText: {
-    color: '#6064C9',
+    color: '#D8FFF8',
     fontWeight: '600',
     fontSize: 22,
    },
-   containerFormCpf: {
-    gap: 20,
-   },
-   containerFormPassword: {
+   containerFormInput: {
     gap: 20,
    },
    containerRememberPassword: {
@@ -62,8 +60,6 @@ const styles = StyleSheet.create({
    input: {
     height: 60,
     width: '100%',
-    borderColor: '#6064C9',
-    borderWidth: 3,
     paddingHorizontal: 20,
     paddingVertical: 20,
     borderRadius: 60,
@@ -71,7 +67,7 @@ const styles = StyleSheet.create({
    },
    containerButton: {
     alignItems: 'center',
-    backgroundColor: '#6064C9',
+    backgroundColor: '#D8FFF8',
     width: '100%',
     height: 30,
     justifyContent: 'center',
@@ -79,24 +75,25 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 30,
    },
-   buttonLogar: {
+   buttonSignup: {
     alignItems: 'center',
     justifyContent: 'center',
    },
-   buttonLogarText: {
+   buttonSignupText: {
     position: 'absolute',
     fontSize: 22,
     fontWeight: '600',
-    color: '#FFF',
+    color: '#6064C9',
     textShadowColor: 'rgba(0, 0, 0, 0.30)'
    },
    bottomContainerText: {
     alignItems: 'center',
     justifyContent: 'center',
     gap: 60,
+    marginBottom: 50,
    },
    allTextPage: {
-    color: '#6064C9',
+    color: '#D8FFF8',
     fontSize: 16, 
     fontWeight: '600',
    }, 

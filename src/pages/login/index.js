@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { View, TouchableOpacity, KeyboardAvoidingView , Text, TextInput} from "react-native"
-import styles from "./style"
+import { View, TouchableOpacity, KeyboardAvoidingView , Text, TextInput} from "react-native";
+import { useNavigation } from '@react-navigation/native';
+import {Ionicons} from '@expo/vector-icons';
+import styles from "./style";
 
-export function Login(){
+export function Login({navigater}){
 
   const [textCpf, setTextCpf] = useState('');
   const [textPassword, setTextPassword] = useState('');
@@ -10,15 +12,25 @@ export function Login(){
   const handleInputCpfChange = (inputText) => {
     setTextCpf(inputText);
   };
-  
+
   const handleInputPasswordChange = (inputText) => {
     setTextPassword(inputText);
   };
 
+  const navigation = useNavigation();
+
+  const back = () => {
+    navigation.goBack();
+  }
+
+  const goToHomeScreen = () => {
+    navigation.navigate('Home')
+  } 
+
     return (
-      <KeyboardAvoidingView contentContainerStyle={styles.main} behavior="position" enabled>
+        <View style={styles.main}>
           <View style={styles.back}>
-            <Text>Voltar</Text>
+            <TouchableOpacity onPress={back}><Ionicons name="arrow-back" size={30} color="#FFF" /></TouchableOpacity>
           </View>
           <View style={styles.textMainContainer}>
             <Text style={styles.textMain}>Wellcome Again!</Text>
@@ -39,12 +51,14 @@ export function Login(){
                   value={textPassword}
                   placeholder="Senha"
                 />
-              </View>
-              <View style={styles.containerRememberPassword}>
-                <Text style={styles.allTextPage}>Lembrar Senha</Text>
+                <Ionicons style={styles.eye} name="eye" size={26} color="#8D9199" />
+                <View style={styles.containerRememberPassword}>
+                  <Ionicons name="checkbox-sharp" size={15} color="#8D9199" />
+                  <Text style={styles.allTextPage}>Lembrar Senha</Text>
+                </View>
               </View>
               <View style={styles.containerButton}>
-                <TouchableOpacity style={styles.buttonLogar}>
+                <TouchableOpacity onPress={goToHomeScreen} style={styles.buttonLogar}>
                   <Text style={styles.buttonLogarText}>
                     Entrar
                   </Text>
@@ -55,8 +69,7 @@ export function Login(){
                 <Text style={styles.allTextPage}>Esqueceu sua Senha?</Text>
               </View>
             </View>
-
           </View>
-      </KeyboardAvoidingView>
+        </View>
     )
 }
