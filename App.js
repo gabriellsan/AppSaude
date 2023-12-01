@@ -1,13 +1,22 @@
-import {NavigationContainer} from '@react-navigation/native'
+import  {NavigationContainer} from '@react-navigation/native'
 import 'react-native-gesture-handler';
-import  {Routes}  from './src/routes';
-
-
+import StackNavigator from './src/stackNavigator';
+import TabNavigator from './src/tabNavigator';
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <Routes/>
-    </NavigationContainer>
-  );
+    return (
+      <NavigationContainer>
+        <StackNavigator/>
+      </NavigationContainer>
+    );
 }
+
+export function Initial() {
+    return (
+      <NavigationContainer>
+        <TabNavigator/>
+      </NavigationContainer>
+    );
+}
+
+

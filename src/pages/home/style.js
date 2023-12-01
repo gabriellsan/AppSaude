@@ -75,6 +75,34 @@ const styles = StyleSheet.create({
     bottomSecondaryText: {
 
     },
+    bottomNavigation: {
+        position: 'absolute',
+        backgroundColor: '#D8FFF8',
+        top: 940,
+        width: '100%',
+        height: '10%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: "center",
+        paddingHorizontal: 20,
+    },
+    cardIconsBottom: {
+        
+    },
+    buttonsBottom: {
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    textButtonsBottom: {
+        fontWeight: '600',
+        fontSize: 15,
+        color: '#6937A9',
+    },
+    iconHome: {
+        width: 24,
+        height: 24,
+        color: '#411D6F',
+    },
 })
 
 export default styles
